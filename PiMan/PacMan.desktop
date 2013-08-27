@@ -1,5 +1,6 @@
 [Desktop Entry]
-Name="PacMan"
-Exec="/home/pi/Desktop/KHD/PiMan/start"
-Icon="/home/pi/Desktop/KHD/PiMan/icon.png"
-Comment="PacMan game"
+Type=Application
+Name=PacMan
+Exec=/home/pi/Desktop/KHD/PiMan/start
+Icon=/home/pi/Desktop/KHD/PiMan/icon.png
+Comment=PacMan game"
