@@ -166,9 +166,11 @@ while ExitFlag == False:
             NextLevel()
 
 #  /****************************************************************/
-# /* Store key the was pressed
+# /* Check for W key press, and exit application when detected. */
 #/****************************************************************/
          KeysPressed = pygame.key.get_pressed()
+         if KeysPressed[pygame.K_w]:
+            ExitFlag = True
 
 #  /***********************************************************************/
 # /* When raspberry found, put worms in hyper mode for the hyper period. */
@@ -246,20 +248,14 @@ while ExitFlag == False:
 # /* Display READY! and start a new game when SPACE is pressed. */
 #/**********************************************************/
             if KeysPressed[pygame.K_SPACE]:
-               KeysPressed = pygame.K_1
                ThisSurface.fill((0xFF, 0xFF, 0x00))
                ThisSurface.blit(TextReady, (180, 175))
                pygame.display.flip()
                HiScore = Reset(HiScore)
-#  /****************************************************************/
-# /* Check for SPACE key press, and exit application when detected. */
-#/****************************************************************/
-         #if KeysPressed[pygame.K_SPACE]:
-            #ExitFlag = True
+
 #  /*******************/
 # /* Update display. */
 #/*******************/
-
          pygame.display.flip()
 
 
