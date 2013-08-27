@@ -246,6 +246,7 @@ while ExitFlag == False:
 # /* Display READY! and start a new game when SPACE is pressed. */
 #/**********************************************************/
             if KeysPressed[pygame.K_SPACE]:
+               KeysPressed = pygame.K_1
                ThisSurface.fill((0xFF, 0xFF, 0x00))
                ThisSurface.blit(TextReady, (180, 175))
                pygame.display.flip()
