@@ -166,11 +166,9 @@ while ExitFlag == False:
             NextLevel()
 
 #  /****************************************************************/
-# /* Check for ESC key press, and exit application when detected. */
+# /* Store key the was pressed
 #/****************************************************************/
-         #KeysPressed = pygame.key.get_pressed()
-         #if KeysPressed[pygame.K_ESCAPE]:
-            #ExitFlag = True
+         KeysPressed = pygame.key.get_pressed()
 
 #  /***********************************************************************/
 # /* When raspberry found, put worms in hyper mode for the hyper period. */
@@ -255,7 +253,6 @@ while ExitFlag == False:
 #  /****************************************************************/
 # /* Check for SPACE key press, and exit application when detected. */
 #/****************************************************************/
-         KeysPressed = pygame.key.get_pressed()
          if KeysPressed[pygame.K_SPACE]:
             ExitFlag = True
 #  /*******************/
