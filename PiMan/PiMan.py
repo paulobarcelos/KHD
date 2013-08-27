@@ -254,8 +254,8 @@ while ExitFlag == False:
 #  /****************************************************************/
 # /* Check for SPACE key press, and exit application when detected. */
 #/****************************************************************/
-         if KeysPressed[pygame.K_SPACE]:
-            ExitFlag = True
+         #if KeysPressed[pygame.K_SPACE]:
+            #ExitFlag = True
 #  /*******************/
 # /* Update display. */
 #/*******************/
